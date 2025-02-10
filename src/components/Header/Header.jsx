@@ -1,4 +1,5 @@
 import  { useState, useEffect } from "react";
+import "boxicons/css/boxicons.min.css";
 import "./index.css";
 import "boxicons";
 import { NavLink } from "react-router-dom";
@@ -54,7 +55,7 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="/About"
+                to="/about"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "Active" : ""}`
                 }
@@ -63,7 +64,7 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="/Events"
+                to="/events"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "Active" : ""}`
                 }
@@ -72,7 +73,7 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="/Team"
+                to="/team"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "Active" : ""}`
                 }
@@ -81,7 +82,7 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="/Clubs"
+                to="/clubs"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "Active" : ""}`
                 }
@@ -91,7 +92,7 @@ const Header = () => {
 
 
               <NavLink
-                to="/Contact"
+                to="/contact"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "Active" : ""}`
                 }
@@ -137,7 +138,7 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="/About"
+                to="/about"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "Active" : ""}`
                 }
@@ -146,7 +147,7 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="/Events"
+                to="/events"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "Active" : ""}`
                 }
@@ -155,7 +156,7 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="/Team"
+                to="/team"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "Active" : ""}`
                 }
@@ -164,7 +165,7 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="/Clubs"
+                to="/clubs"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "Active" : ""}`
                 }
@@ -174,7 +175,7 @@ const Header = () => {
 
 
               <NavLink
-                to="/Contact"
+                to="/contact"
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "Active" : ""}`
                 }

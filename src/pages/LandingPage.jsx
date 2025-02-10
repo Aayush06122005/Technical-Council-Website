@@ -7,6 +7,7 @@ import Carousel  from '../components/Carousel/index.jsx'
 // import slides from './car.json'
 
 
+
 const LandingPage = () => {
   return (
     <div className='landing-container'>
@@ -21,7 +22,7 @@ const LandingPage = () => {
 
       <div className='community'>
         <h1 className='about-us-heading'>Comm<span className='hf-text'>unity</span></h1>
-        <div className="com-text">
+        <div className="com-text-1">
           <div className='pt-comm'>
             <h2>1. Join the Technical Council Community</h2>
             <br />
