@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.navbar-container {
+    z-index: 1000;
+    position: fixed;
+    padding-top: 0.9375rem; /* 15px */
+    display: flex;
+    height: 3.125rem; /* 50px */
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 1.0625rem; /* 17px */
+    font-family: "Host Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar-toggle-icon-container {
+    margin-left: 0.3125rem; /* 5px */
+    width: 3.75rem; /* 60px */
+    height: 3.75rem; /* 60px */
+    background-color: #141414;
+    border-radius: 1.875rem; /* 30px */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.3s ease;
+}
+
+.navbar-toggle-icon-container2 {
+    margin-left: 0.3125rem; /* 5px */
+    width: 99%;
+    height: 3.75rem; /* 60px */
+    background-color: #141414;
+    border-radius: 1.875rem; /* 30px */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.3s ease;
+}
+
+/* .navbar-toggle-icon-container:hover{
+    width : 99%;
+} */
+
+.navbar-toggle-icon-container i {
+    font-size: 2.5rem; /* 40px */
+}
+
+.nav-items {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    position: relative;
+    right: 1.125rem; /* 18px */
+    gap: 7.5rem; /* 120px */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.bxs-x-circle {
+    position: relative;
+    left: 0.625rem; /* 10px */
+}
+
+.logo {
+    position: relative;
+    left: 1.25rem; /* 20px */
+    font-size: 2.5rem; /* 40px */
+    font-family: "Host Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.logo-H {
+    color: #4CAEFF;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-items-style:hover {
+    color: #4CAEFF;
+}
+
+.Active {
+    font-weight: 400;
+    color: #4CAEFF;
+}
+
+
+
+
+
+
+
+.mob-cross-img{
+    font-size : 2rem;
+    align-self : center;
+    position : relative;
+    left : 0.1rem;
+}
+
+.mob-toggle-img{
+    font-size : 2rem;
+    align-self : center;
+    position : relative;
+    bottom : 0.5rem;
+    
+}
+
+.mob-navbar-container{
+    position : relative;
+    left : 1rem;
+    padding-top : 1rem;
+    border-radius : 2rem;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content : center;
+    flex-direction : column;
+    font-size: 1.0625rem; 
+    font-family: "Host Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color : #141414;
+}
+
+.mob-nav-items{
+    display : flex;
+    flex-direction : column;
+    gap : 1rem;
+    padding-bottom: 1rem;
+}

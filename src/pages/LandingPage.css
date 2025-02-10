@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+html{
+    font-size: 16px;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Host Grotesk", serif;
+    font-weight: 300;
+}
+
+.landing-container {
+    overflow: hidden;
+    background: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23c1bdc7' fill-opacity='0.74' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    padding: 0.5rem;
+}
+
+.welcome-to {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.landingPage-heading {
+    font-size: 5rem;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.lp-title {
+    text-align: center;
+    margin-top: 5rem;
+    line-height: 4rem;
+}
+
+.Join-lp {
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.Join-lp:hover {
+    background-color: black;
+    color: white;
+}
+    
+.login-btn-lp {
+    text-decoration: none;
+}
+
+.community {
+    background-color: #1C1E23;
+    width: 100% !important;
+    border-radius: 0.5rem;
+    font-family: "Host Grotesk", serif !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left : 15rem;
+    padding-right : 15rem;
+    margin-top: 5rem;
+}
+
+.hf-text {
+    color: #4CAEFF;
+}
+
+.pt-comm, .com-text {
+    width: 100%;
+    padding: 1rem 0;
+    font-family: "Host Grotesk", serif;
+}
+
+.About-Us {
+    width: 90%;
+    background-color: #1C1E23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-top: 5rem;
+    transition: transform 0.3s ease;
+}
+
+.About-Us:hover {
+    transform: scale(1.03);
+}
+
+.about-us-heading {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.events {
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.heading-txt {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom : 1rem;
+}
+
+.live-stats-heading {
+    font-size: 2.5rem;
+}
+
+.stats-elements {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.visitors {
+    display : flex;
+    flex-direction : column;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.stats-head {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.stats-value {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .landingPage-heading {
+        font-size: 6rem;
+    }
+    .about-us-heading {
+        font-size: 3.5rem;
+    }
+    .lp-title {
+        margin-top: 8rem;
+    }
+
+    .statistics{
+        width : 80%;
+    }
+
+    .stats-elements {
+        /* flex-direction: row;
+        justify-content: space-between;
+        width: 80%; */
+        width : 100%;
+        display : flex;
+        flex-direction : row;
+        justify-content : space-between;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .landingPage-heading {
+        font-size: 7rem;
+    }
+    .about-us-heading {
+        font-size: 4rem;
+    }
+    .lp-title {
+        margin-top: 10rem;
+    }
+    .community, .About-Us {
+        width: 70%;
+    }
+
+    .statistics{
+        width : 80%;
+    }
+
+    .stats-elements {
+        /* width: 60%;
+        flex-direction: row;
+        justify-content: space-between; */
+        width : 100%;
+        display : flex;
+        flex-direction : row;
+        justify-content : space-between;
+    }
+}
+
+.events-heading {
+    overflow : hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items : center;
+    flex-wrap: nowrap;
+    gap : 0.5rem;
+}
+
+.blocks-left,.blocks-right {
+  display: flex;
+  flex-direction: column;
+  flex : 1;
+}
+
+.blk{
+    height: 0.5rem;
+    background-color:rgb(0, 149, 255);
+    margin: 0.2rem 0;
+}
+  
+.heading-text {
+    text-align : center;
+    white-space: nowrap;
+    font-size : 2px;
+}

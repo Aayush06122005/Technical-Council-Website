@@ -1,5 +1,4 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+// import { createRoot } from 'react-dom/client'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
@@ -11,10 +10,12 @@ import ContactUsPage from "./pages/ContactUsPage.jsx"
 import AboutPage from "./pages/AboutPage.jsx"
 import TeamsPage from "./pages/TeamsPage.jsx"
 import EventsPage from "./pages/EventsPage.jsx"
+import 'boxicons';
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <LandingPage />,
     children: [
         {
             path: "/",

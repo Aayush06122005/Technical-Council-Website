@@ -1,0 +1,82 @@
+/* Footer Styling */
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+.footer {
+    border-top-right-radius : 150px;
+    background: #1C1E23;
+    color: #fff;
+    margin : 0;
+    width : 100%;
+    padding: 40px 0;
+    font-family: "Arial", sans-serif;
+}
+  
+.footer-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: auto;
+text-align: left;
+}
+
+.footer-section {
+flex: 1;
+min-width: 250px;
+margin: 20px;
+}
+
+.footer-section h2 {
+font-size: 18px;
+margin-bottom: 15px;
+position: relative;
+text-transform: uppercase;
+}
+
+.footer-section p {
+font-size: 14px;
+color: #bbb;
+}
+
+.footer-section ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+color: #bbb;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+color: #fff;
+}
+
+.social-icons {
+display: flex;
+gap: 15px;
+}
+
+.social-icons a {
+color: #bbb;
+font-size: 18px;
+transition: color 0.3s;
+}
+
+.social-icons a:hover {
+color: #fff;
+}
+
+.footer-bottom {
+text-align: center;
+padding: 15px 0;
+margin-top: 20px;
+border-top: 1px solid #444;
+font-size: 14px;
+color: #bbb;
+}

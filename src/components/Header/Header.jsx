@@ -1,36 +1,194 @@
-import React from 'react'
-import Logo from '../Logo/Logo'
-import { useNavigate } from 'react-router-dom'
-import { Link } from 'react-router-dom'
-function Header() {
-  const navigate = useNavigate()
+import  { useState, useEffect } from "react";
+import "./index.css";
+import "boxicons";
+import { NavLink } from "react-router-dom";
+
+const Header = () => {
+  const [open, setOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const toggleNavbar = () => {
+    setOpen((prevState) => !prevState);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  if (windowWidth < 1280) {
+    return (
+      <>
+        
+        <div className="mob-navbar-container">
+          <div
+            className={`${
+              open
+                ? "mob-navbar-toggle-icon-container2"
+                : "mob-navbar-toggle-icon-container"
+            } ${open ? "expanded" : ""}`}
+          >
+            {open ? (
+              <i className="bx bx-x-circle mob-cross-img" onClick={toggleNavbar}></i>
+            ) : (
+              <i className="bx bx-menu mob-toggle-img" onClick={toggleNavbar}></i>
+            )}
+
+            {open ? (
+              <>
+                <div className="mob-nav-items">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">Home</p>
+              </NavLink>
+
+              <NavLink
+                to="/About"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">About</p>
+              </NavLink>
+
+              <NavLink
+                to="/Events"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">Events</p>
+              </NavLink>
+
+              <NavLink
+                to="/Team"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">Team</p>
+              </NavLink>
+
+              <NavLink
+                to="/Clubs"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">Clubs</p>
+              </NavLink>
+
+
+              <NavLink
+                to="/Contact"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">Contact</p>
+              </NavLink>
+            </div>
+              </>
+            ) : ('')}
+          </div>
+        </div>
+      </>
+    );
+  }
+
   return (
-    <div className='text-white h-16 w-[95%] bg-[#141414] rounded-full mx-auto my-4 flex justify-between px-10 py-2 items-center'>
-      <Logo />
-      <div className=''>
-        <ul className='flex gap-9 items-center'>
-          <Link to="/">
-            <li className='hover:cursor-pointer hover:text-blue-600'>Home</li>
-          </Link>
-          <Link to="/about">
-            <li className='hover:cursor-pointer hover:text-blue-600'>About</li>
-          </Link>
-          <Link to="/events">
-            <li className='hover:cursor-pointer hover:text-blue-600'>Events</li>
-          </Link>
-          <Link to="/team">
-            <li className='hover:cursor-pointer hover:text-blue-600'>Team</li>
-          </Link>
-          <Link to="/clubs">
-            <li className='hover:cursor-pointer hover:text-blue-600'>Clubs</li>
-          </Link>
-          <Link to="/contact">
-          <li className='hover:cursor-pointer hover:text-blue-600'>Contact</li>
-          </Link>
-        </ul>
+    <div className="navbar-container">
+      <div
+        className={`${
+          open
+            ? "navbar-toggle-icon-container2"
+            : "navbar-toggle-icon-container"
+        } ${open ? "expanded" : ""}`}
+      >
+        {open ? (
+          <i className="bx bxs-x-circle" onClick={toggleNavbar}></i>
+        ) : (
+          <i className="bx bx-menu-alt-right" onClick={toggleNavbar}></i>
+        )}
+        {open ? (
+          <>
+            <p className="logo">
+              T<span className="logo-H">C</span>
+            </p>
+            <div className="nav-items">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">Home</p>
+              </NavLink>
+
+              <NavLink
+                to="/About"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">About</p>
+              </NavLink>
+
+              <NavLink
+                to="/Events"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">Events</p>
+              </NavLink>
+
+              <NavLink
+                to="/Team"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">Team</p>
+              </NavLink>
+
+              <NavLink
+                to="/Clubs"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">Clubs</p>
+              </NavLink>
+
+
+              <NavLink
+                to="/Contact"
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "Active" : ""}`
+                }
+              >
+                <p className="nav-items-style">Contact</p>
+              </NavLink>
+            </div>
+          </>
+        ) : (
+          ""
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
